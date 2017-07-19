@@ -18,7 +18,7 @@ var mobileVideoPlayer = function(){ //定义单例
         },
         setTamplate:function(vid){
             var self = this;
-            self.tamplate = '<div class="bg'+self.timeNumId+'"></div><video src="'+vid+'" controls="controls" id="tsvideo'+self.timeNumId+'"></video>';
+            self.tamplate = '<video src="'+vid+'" controls="controls" id="tsvideo'+self.timeNumId+'"></video><div class="bg'+self.timeNumId+'"></div>';
             $('body').append('<div id="video'+self.timeNumId+'"></div>');
             return self.tamplate;
         },
@@ -52,7 +52,7 @@ var mobileVideoPlayer = function(){ //定义单例
             var self = this;
             self.timeNumId = Math.floor(Math.random()*100);
             self.addDomClass();
-            self.setTamplate();
+            // self.setTamplate();
             self.setVideo();
         }
     }
