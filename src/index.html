@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui">
+	<style type="text/css">
+		html,body{
+			position: relative;
+			width: 100%;
+			height: 100%;
+		}
+		.parent1,.parent2{
+			position: relative;
+			height: 500px;
+		}
+		.parent1{
+			width: 300px;
+		}
+		.con1{
+			width: 50px;
+			height: 50px;
+			background:red;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent1">
+		<div class="con1" data-vid="https://nie.v.netease.com/nie/2017/0619/392276668c7a0649fd4f0fd32e056e90qt.mp4">dasdas<br>sad</div>
+	</div>
+	
+	<div class="parent2">
+		<div class="con2">dasda<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>s2sad</div>
+	</div>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="mobileVideo.js"></script>
+<script type="text/javascript">
+	var a = mobileVideoPlayer.create({
+	    'playBtn':'.con1'
+	});
+</script>
+</body>
+</html>
