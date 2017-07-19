@@ -52,7 +52,7 @@ var mobileVideoPlayer = function(){ //定义单例
             var self = this;
             self.timeNumId = Math.floor(Math.random()*100);
             self.addDomClass();
-            self.setTamplate();
+            // self.setTamplate();
             self.setVideo();
         }
     }
